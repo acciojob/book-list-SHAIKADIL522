@@ -76,39 +76,37 @@
   </style>
 </head>
 <body>
-  <h1>MyBookList</h1>
+ <h1>MyBookList</h1>
 
+<form id="book-form">
   <div class="form-group">
-    <form id="book-form">
-      <div class="form-group">
-        <label for="title">Title</label>
-        <input type="text" id="title" placeholder="Book title" required>
-      </div>
-      <div class="form-group">
-        <label for="author">Author</label>
-        <input type="text" id="author" placeholder="Author name" required>
-      </div>
-      <div class="form-group">
-        <label for="isbn">ISBN#</label>
-        <input type="text" id="isbn" placeholder="ISBN number" required>
-      </div>
-      <button type="submit" id="submit">Submit</button>
-    </form>
+    <label for="title">Title</label>
+    <input type="text" id="title">
   </div>
 
-  <table class="table table-striped">
-    <thead>
-      <tr>
-        <th>Title</th>
-        <th>Author</th>
-        <th>ISBN#</th>
-        <th></th>
-      </tr>
-    </thead>
-    <tbody id="book-list">
-    </tbody>
-  </table>
+  <div class="form-group">
+    <label for="author">Author</label>
+    <input type="text" id="author">
+  </div>
 
+  <div class="form-group">
+    <label for="isbn">ISBN#</label>
+    <input type="text" id="isbn">
+  </div>
+
+  <button type="submit" id="submit">Submit</button>
+</form>
+
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th>Title</th>
+      <th>Author</th>
+      <th>ISBN#</th>
+    </tr>
+  </thead>
+  <tbody id="book-list"></tbody>
+</table>
   <script src="doc.js"></script>
 </body>
 </html>

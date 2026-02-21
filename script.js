@@ -19,7 +19,7 @@ form.addEventListener('submit', function (e) {
     '<td>' + escapeHtml(title) + '</td>' +
     '<td>' + escapeHtml(author) + '</td>' +
     '<td>' + escapeHtml(isbn) + '</td>' +
-    '<td><button type="button" class="delete">Clear</button></td>';
+   <td><button type="button" class="delete">X</button></td>
 
   row.querySelector('.delete').addEventListener('click', function () {
     row.remove();
